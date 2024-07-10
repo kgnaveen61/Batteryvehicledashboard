@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery unlock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .status-on {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-off {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .section-title {
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .title-on {
+            background-color: #ffcccb;
+        }
+        .title-off {
+            background-color: #d3d3d3;
+        }
+        .maindashboard-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: right;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 10px; /* Adjust as needed */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header .right {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: rgb(5, 0, 0);
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="index.html">
+        <button class="maindashboard-button">Main Dashboard</button>
+    </a>
+    <div class="right">
+        <button class="button">Date Range from - to </button>
+        <button class="button">Export</button>
+    </div>
+</div>
+
+<div class="section-title title-on">Battery Unlock </div>
+<table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Activity Start Date</th>
+        <th>Activity End Date</th>
+        <th>Transaction ID</th>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>User Activity</th>
+        <th>Activity Context</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2024-07-04 16:58:31+00:00</td>
+        <td>2024-07-04 16:58:35+00:00</td>
+        <td>1b2deb65-bd7b-4327-9eee-a024e26ebdee</td>
+        <td>9019223455</td>
+        <td>Name not found</td>
+        <td>Service_App - Access denied please contact Sun Mobility</td>
+        <td>{'ActivityContext': {'Status': 'Failure', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': None}}, 'BpIdAndLocation': None}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 16:55:21+00:00</td>
+        <td>2024-07-04 16:55:21+00:00</td>
+        <td>e6c53727-c427-4ea4-b26c-bbeb8a68e079</td>
+        <td>7065542250</td>
+        <td>Gobind-Aftersales</td>
+        <td>Service_App - Vehicle KeyFOB Mapping</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': {'Vin': 'MEPHENYNB02AL2072', 'DockId': 'INSMOMAD0107G286B10E'}}}, 'BpIdAndLocation': [{'bpId': 'INSMOMAH0507B0332212', 'lastLatitude': 28.681965, 'lastLongitude': 77.001798}]}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 16:58:54+00:00</td>
+        <td>2024-07-04 16:58:54+00:00</td>
+        <td>25d27635-4af2-44da-aa2c-95a6149893f9</td>
+        <td>9910471035</td>
+        <td>Ranjeet-Aftersales</td>
+        <td>Service_App - Key Fob Read</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': {'Vin': 'SESEAG10202200038', 'DockId': 'INSMOMAD0107A020190E'}}}, 'BpIdAndLocation': [{'bpId': 'INSMOMAH0306L0712711', 'lastLatitude': 28.558012, 'lastLongitude': 77.346548}]}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 16:59:07+00:00</td>
+        <td>2024-07-04 16:59:07+00:00</td>
+        <td>e6c53727-c427-4ea4-b26c-bbeb8a68e079</td>
+        <td>7065542250</td>
+        <td>Gobind-Aftersales</td>
+        <td>Service_App - Vehicle KeyFOB Mapping</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': {'Vin': 'HPNXT20230701806Z', 'DockId': 'INSMOMAD0107K308660E'}}}, 'BpIdAndLocation': [{'bpId': 'INSMOMAH0307C1069012', 'lastLatitude': 28.683515, 'lastLongitude': 77.000155}]}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 16:55:21+00:00</td>
+        <td>2024-07-04 16:55:21+00:00</td>
+        <td>e6c53727-c427-4ea4-b26c-bbeb8a68e079</td>
+        <td>7065542250</td>
+        <td>Gobind-Aftersales</td>
+        <td>Service_App - Key Fob Read</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': {'Vin': 'MEPHENYNB02AL2072', 'DockId': 'INSMOMAD0107G286B10E'}}}, 'BpIdAndLocation': [{'bpId': 'INSMOMAH0507B0332212', 'lastLatitude': 28.681965, 'lastLongitude': 77.001798}]}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 16:58:28+00:00</td>
+        <td>2024-07-04 16:58:28+00:00</td>
+        <td>25d27635-4af2-44da-aa2c-95a6149893f9</td>
+        <td>9910471035</td>
+        <td>Ranjeet-Aftersales</td>
+        <td>Service_App - App Launch</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': None}}, 'BpIdAndLocation': None}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 16:58:54+00:00</td>
+        <td>2024-07-04 16:58:54+00:00</td>
+        <td>25d27635-4af2-44da-aa2c-95a6149893f9</td>
+        <td>9910471035</td>
+        <td>Ranjeet-Aftersales</td>
+        <td>Service_App - Vehicle KeyFOB Mapping</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': {'Vin': 'SESEAG10202200038', 'DockId': 'INSMOMAD0107A020190E'}}}, 'BpIdAndLocation': [{'bpId': 'INSMOMAH0306L0712711', 'lastLatitude': 28.558012, 'lastLongitude': 77.346548}]}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 16:59:07+00:00</td>
+        <td>2024-07-04 16:59:07+00:00</td>
+        <td>e6c53727-c427-4ea4-b26c-bbeb8a68e079</td>
+        <td>7065542250</td>
+        <td>Gobind-Aftersales</td>
+        <td>Service_App - Key Fob Read</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': {'Vin': 'HPNXT20230701806Z', 'DockId': 'INSMOMAD0107K308660E'}}}, 'BpIdAndLocation': [{'bpId': 'INSMOMAH0307C1069012', 'lastLatitude': 28.683515, 'lastLongitude': 77.000155}]}</td>
+      </tr>
+      <tr>
+        <td>2024-07-04 17:00:00+00:00</td>
+        <td>2024-07-04 17:00:00+00:00</td>
+        <td>2b1111a3-2588-4be6-9339-934662bde73c</td>
+        <td>9910480674</td>
+        <td>Vishal-Aftersales</td>
+        <td>Service_App - Key Fob Read</td>
+        <td>{'ActivityContext': {'Status': 'Success', 'AppType': 'Service_App', 'AppVersion': '5.5', 'AdditionalParams': 'No Data Available', 'AgentAppContextEntity': None, 'ServiceAppContextEntity': {'Ble': None, 'AdminKeyFob': None, 'VehicleKeyFob': {'Vin': 'SESEAG04202300509', 'DockId': 'INSMOMAD0107B2306E0E'}}}, 'BpIdAndLocation': [{'bpId': 'INSMOMAH3304B2200511', 'lastLatitude': 28.517547, 'lastLongitude': 77.08099}]}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>
+

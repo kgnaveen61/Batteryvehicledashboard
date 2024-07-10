@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Alert monitoring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .status-on {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-off {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .section-title {
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .title-on {
+            background-color: #ffcccb;
+        }
+        .title-off {
+            background-color: #d3d3d3;
+        }
+        .maindashboard-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: right;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 10px; /* Adjust as needed */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header .right {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: rgb(5, 0, 0);
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="index.html">
+        <button class="maindashboard-button">Main Dashboard</button>
+    </a>
+    <div class="right">
+        <button class="button">Date Range from - to </button>
+        <button class="button">Export</button>
+    </div>
+</div>
+
+<div class="section-title title-on">Battery Alert monitoring </div>
+<table>
+    <thead>
+            <tr>
+                <th>Tiu ID</th>
+                <th>Battery ID</th>
+                <th>Alert Type</th>
+                <th>Alert No.</th>
+                <th>Zone</th>
+                <th>BP_family</th>
+                <th>State</th>
+                <th>vDock | Station ID</th>
+                <th>Vin</th>
+                <th>Vin Type</th>
+                <th>Business Type</th>
+                <th>Classification</th>
+                <th>Primary Fault Description</th>
+                <th>Quarantine Number</th>
+                <th>Cycle Number</th>
+                <th>Tiu Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0035696742</td>
+                <td>INSMOMAHA406K25E5E11</td>
+                <td>Warning</td>
+                <td>4409</td>
+                <td>Gurugram</td>
+                <td>DP</td>
+                <td>Discharge</td>
+                <td>INSMOMAD0106L057430E</td>
+                <td>MD9RPSK22FP565509</td>
+                <td>eLoaderL5-3D</td>
+                <td>MAAS</td>
+                <td>G - Reduced Performance</td>
+                <td>Over Dock -Ve Temperature</td>
+                <td>0</td>
+                <td>528</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+            <tr>
+                <td>0035801144</td>
+                <td>INSMOMAH0306L081AB11</td>
+                <td>Warning</td>
+                <td>4331</td>
+                <td>Delhi</td>
+                <td>DP</td>
+                <td>Discharge</td>
+                <td>INSMOMAD0106J102030E</td>
+                <td>SESEAG10202200116</td>
+                <td>eBike</td>
+                <td>MAAS</td>
+                <td>E - Abuse Vehicle Stoppage</td>    
+                <td>Key Already On</td>
+                <td>0</td>
+                <td>656</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+            <tr>
+                <td>0035526550</td>
+                <td>INSMOMAH9906B150C911</td>
+                <td>Critical</td>
+                <td>4390</td>
+                <td>Delhi</td>
+                <td>DP</td>
+                <td>Idle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>F - Tracking</td>
+                <td>Battery Orphan</td>
+                <td>0</td>
+                <td>691</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+            <tr>
+                <td>0036132721</td>
+                <td>INSMOMAH1007L15BC813</td>
+                <td>Warning</td>
+                <td>4656</td>
+                <td>Bengaluru</td>
+                <td>ATLAS phase 2</td>
+                <td>Discharge</td>
+                <td>INSMOMAD0106J137430E</td>
+                <td>MBX0008CN1L243496</td>
+                <td>eLoaderL5-3D</td>
+                <td>MAAS</td>
+                <td>B - Battery Issue</td>
+                <td>Mismatch between AFE Top Pin and Pack voltage (Sum of Celll)</td>
+                <td>0</td>
+                <td>305</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+            <tr>
+                <td>0035828584</td>
+                <td>INSMOMAH0306L0923411</td>
+                <td>Warning</td>
+                <td>4656</td>
+                <td>Delhi</td>
+                <td>DP</td>
+                <td>Discharge</td>
+                <td>INSMOMAD0107G2862C0E</td>
+                <td>MEPHENYNB08AL4042</td>
+                <td>eBike</td>
+                <td>BAAS</td>
+                <td>B - Battery Issue</td>
+                <td>Mismatch between AFE Top Pin and Pack voltage (Sum of Celll)</td>
+                <td>0</td>
+                <td>286</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+            <tr>
+                <td>0036184912</td>
+                <td>INSMOMAH1308B1339A13</td>
+                <td>Critical</td>
+                <td>4375</td>
+                <td>Bengaluru</td>
+                <td>ATLAS phase 2</td>
+                <td>Discharge</td>
+                <td>INSMOMAD0107K180290E</td>
+                <td>P51EPHRMB24000125</td>
+                <td>eBike</td>
+                <td>MAAS</td>
+                <td>G - Reduced Performance</td>
+                <td>Min Cell Voltage</td>
+                <td>0</td>
+                <td>173</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+            <tr>
+                <td>0035748469</td>
+                <td>INSMOMAHA406K0988111</td>
+                <td>Critical</td>
+                <td>4388</td>
+                <td>Bengaluru</td>
+                <td>DP</td>
+                <td>Discharge</td>
+                <td>INSMOMAD0106I011630E</td>
+                <td>MEPHENYNB08AL7145</td>
+                <td>eBike</td>
+                <td>BAAS</td>
+                <td>C - Charge System Issue</td>
+                <td>BMSAndOut</td>
+                <td>0</td>
+                <td>592</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+            <tr>
+                <td>0035747669</td>
+                <td>INSMOMAHA706L1040A11</td>
+                <td>Warning</td>
+                <td>4513</td>
+                <td>Gurugram</td>
+                <td>DP</td>
+                <td>Idle</td>
+                <td>INSMOMAD0106K073000E</td>
+                <td>MD9RPSK22FP565495</td>
+                <td>eLoaderL5-3D</td>
+                <td>MAAS</td>
+                <td>B - Battery Issue</td>
+                <td>CAN Communication Fault</td>
+                <td>0</td>
+                <td>537</td>
+                <td>7/7/2024 0:00</td>
+            </tr>
+        </tbody>      
+</table>
+</body>
+</html>
+

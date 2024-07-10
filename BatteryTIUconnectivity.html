@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery TIU Connectivity Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .status-on {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-off {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .section-title {
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .title-on {
+            background-color: #ffcccb;
+        }
+        .title-off {
+            background-color: #d3d3d3;
+        }
+        .maindashboard-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: right;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 10px; /* Adjust as needed */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header .right {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: rgb(5, 0, 0);
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="index.html">
+        <button class="maindashboard-button">Main Dashboard</button>
+    </a>
+    <div class="right">
+        <button class="button">Date Range from - to </button>
+        <button class="button">Export</button>
+    </div>
+</div>
+
+<div class="section-title title-on">Total batteries TIU connectivity </div>
+<table>
+    <thead>
+        <tr>
+            <th>Battery Serial number</th>
+            <th>BP Type</th>
+            <th>TIU Serial Number</th>
+            <th>Zone</th>
+            <th>Status</th>
+            <th>Last Latitude</th>
+            <th>Last Longitude</th>
+            <th>Last TIU time Stamp</th>
+            <th>Time since last reported</th>
+            <th>SCU Version</th>
+            <th>Settings Version </th>
+            <th>Fault config version</th>
+            <th>TIU version</th>
+            <th>TIU connectivity Aging</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>INSMOMAH0307C15A5312</td>
+            <td>12</td>
+            <td>36026725</td>
+            <td>Faridabad</td>
+            <td>Deployed</td>
+            <td>617.343613</td>
+            <td>617.343613</td>
+            <td>7/11/2024 9:19</td>
+            <td>-23h: -56min: -9 sec ago</td>
+            <td>13.00.01</td>
+            <td>11,0,17</td>
+            <td>11,0,17</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH0607C12AEC12</td>
+            <td>12</td>
+            <td>35906356</td>
+            <td>Bengaluru</td>
+            <td>Ready to be Shipped</td>
+            <td>12.985525</td>
+            <td>77.608685</td>
+            <td>7/8/2024 13:11</td>
+            <td>-3h: -48min: 0 sec ago</td>
+            <td>13.00.09</td>
+            <td>11,1,7</td>
+            <td>11,1,7</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH1007L21E5B13</td>
+            <td>13</td>
+            <td>36073453</td>
+            <td>Bengaluru</td>
+            <td>Deployed</td>
+            <td>13.060098</td>
+            <td>77.612463</td>
+            <td>7/8/2024 9:24</td>
+            <td>0h: 0min: -34 sec ago</td>
+            <td>13.00.53</td>
+            <td>13,0,19</td>
+            <td>13,0,19</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH0207C21DC112</td>
+            <td>12</td>
+            <td>35974198</td>
+            <td>Gurugram</td>
+            <td>Deployed</td>
+            <td>617.343613</td>
+            <td>617.343613</td>
+            <td>7/8/2024 9:21</td>
+            <td>0h: 1min: 37 sec ago</td>
+            <td>13.00.01</td>
+            <td>11,0,17</td>
+            <td>11,0,17</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH0307C277FE11</td>
+            <td>11</td>
+            <td>35888935</td>
+            <td>Bengaluru</td>
+            <td>Deployed</td>
+            <td>12.961068</td>
+            <td>77.55948</td>
+            <td>7/8/2024 9:21</td>
+            <td>0h: 1min: 52 sec ago</td>
+            <td>10.04.23</td>
+            <td>4,4,2</td>
+            <td>4,4,2</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH1107L2879513</td>
+            <td>13</td>
+            <td>36040346</td>
+            <td>Bengaluru</td>
+            <td>Deployed</td>
+            <td>12.924963</td>
+            <td>77.651805</td>
+            <td>7/8/2024 9:21</td>
+            <td>0h: 2min: 3 sec ago</td>
+            <td>13.00.53</td>
+            <td>13,0,19</td>
+            <td>13,0,19</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH8205G2602D11</td>
+            <td>11</td>
+            <td>35509556</td>
+            <td>Delhi</td>
+            <td>Deployed</td>
+            <td>28.605137</td>
+            <td>77.40177</td>
+            <td>7/8/2024 9:21</td>
+            <td>0h: 2min: 14 sec ago</td>
+            <td>10.04.05</td>
+            <td>4,2,16</td>
+            <td>4,2,16</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH3504B2500111</td>
+            <td>11</td>
+            <td>1811000205</td>
+            <td>Production ELRC - Bangalore</td>
+            <td>Deployed</td>
+            <td>12.97775</td>
+            <td>77.706728</td>
+            <td>7/8/2024 9:20</td>
+            <td>0h: 2min: 29 sec ago</td>
+            <td>04.15.05</td>
+            <td>18,6,2</td>
+            <td>18,6,2</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>INSMOMAH9305H2704211</td>
+            <td>11</td>
+            <td>35509598</td>
+            <td>Delhi</td>
+            <td>Deployed</td>
+            <td>28.588018</td>
+            <td>77.380288</td>
+            <td>7/8/2024 9:20</td>
+            <td>0h: 2min: 31 sec ago</td>
+            <td>10.01.00</td>
+            <td>4,0,14</td>
+            <td>4,0,14</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

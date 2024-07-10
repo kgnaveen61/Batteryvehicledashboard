@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Main Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f8f5;
+            background: url('Image1.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #d9ebf4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #010101;
+        }
+        .section {
+            border: 5px solid;
+            padding: 10px;
+            margin: 20px 0;
+            width: 90%;
+            box-sizing: border-box;
+        }
+        .section1 {
+            border-color: rgb(123, 193, 225);
+        }
+        .section2 {
+            border-color: rgb(126, 208, 233);
+        }
+        .section-title {
+            font-weight: bold;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+        .section1 .section-title {
+            color: red;
+        }
+        .section2 .section-title {
+            color: blue;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-top: 20px;
+        }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 170px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            color: #000101;
+            text-align: center;
+            text-decoration: none;
+        }
+        .battery-card {
+            color: rgb(7, 6, 6);
+        }
+        .vehicle-card {
+            color: rgb(5, 5, 6);
+        }
+        .card:nth-child(1) { background-color: #f1e349; }
+        .card:nth-child(2) { background-color: #b2ee7b; }
+        .card:nth-child(3) { background-color: #e29b74; }
+        .card:nth-child(4) { background-color: #65e8ef; }
+        .card:nth-child(5) { background-color: #f1e349; }
+        .card:nth-child(6) { background-color: #b2ee7b; }
+        .card:nth-child(7) { background-color: #e29b74; }
+        .card:nth-child(8) { background-color: #65e8ef; }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="title">Main Dashboard</h2>  
+    </div>
+    <div class="section section1">
+        <div class="section-title">Battery details</div>
+        <div class="dashboard">
+            <a href="Batterydeployed.html" class="card battery-card">Total Field deployed Batteries (55000 / 100%)</a>
+            <a href="BatteryTIUconnectivity.html" class="card battery-card">Battery in swap but not communicating (30000 / 55%)</a>
+            <a href="QurantinedBatterydetails.html" class="card battery-card">Quarantined Battery details (250 / 0.4%)</a>
+            <a href="BatteryUpgradation.html" class="card battery-card">Pending BP firmware Upgradation SCU (6000 / 11%)/SCU (2000 / 4%)</a>
+            <a href="Alertmonitoring.html" class="card battery-card">Alert Monitoring super critical Alerts</a>
+            <a href="BatteryUnlock.html" class="card battery-card">Vehicle Battery Unlock(SBA/Service App summary)</a>
+            <a href="batterynotinswap.html" class="card battery-card">Battery Not in Swap (7500 / 13%)</a>
+            <a href="Batterycapacity.html" class="card battery-card">Battery Capacity Report (7500 / 13%)</a>
+        </div>
+    </div>
+    <div class="section section2">
+        <div class="section-title">Vehicle details</div>
+        <div class="dashboard">
+            <a href="Vehicledeployedmass.html" class="card vehicle-card">Total Field deployed Vehicles (20695/ 100%)</a>
+            <a href="Vehicle_temp_alert.html" class="card vehicle-card">Vehicle Severe Dock Temperature +ve and -ve (100 / 0.48%)</a>
+            <a href="Vehicle_Outsense_malfunction.html" class="card vehicle-card">EV Outsence Malfunction (250 / 1.2%)</a>
+            <a href="Vehicledeployedbass.html" class="card vehicle-card">Vehicle not came for swap(180 / 0.86%)</a>
+        </div>
+    </div>
+</body>
+</html>
